@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__
+
+# datasets
+dataset_seg/
+dataset_det/
+tmp_dataset/for_detection/
+tmp_dataset/for_detection/
+*.csv
+*.json
+*.txt
+
+# models
+*.pt
+*.h5
+*.pkl
+*.model
+*.weights
+*.onnx
+*.pb
+*.tflite
+*.keras
+*.hdf5
+*.pth
+*.ckpt
+
+# logs
+training_result_*/
