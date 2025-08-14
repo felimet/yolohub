@@ -25,4 +25,35 @@ tmp_dataset/for_detection/
 *.ckpt
 
 # logs
-training_result_*/
+*training_result/
+
+# === Added: training & inference artifacts (avoid large / generated files) ===
+# TensorBoard / logs
+**/events.out.tfevents.*
+
+# Training result directories
+training/det_training_result/
+training/seg_training_result/
+training/**/weights/
+
+# Inference / evaluation outputs under use_model
+coco2mask/output
+use_model/**/weights/
+use_model/**/confusion_matrix*.png
+use_model/**/results.*
+use_model/**/train_batch*.jpg
+use_model/**/val_batch*.jpg
+use_model/**/labels.jpg
+use_model/**/PR_curve.png
+use_model/**/P_curve.png
+use_model/**/R_curve.png
+use_model/**/F1_curve.png
+
+# Visualization outputs
+visual_ann/visual_result/
+
+# Auto annotation downloaded/converted model weights
+auto_annotation/sam_model/
+
+# (Optional) Uncomment if you also want to exclude base pre-trained weights directory structure entirely
+# base_model/
